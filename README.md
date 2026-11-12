@@ -2,6 +2,10 @@
 
 An interactive e-commerce single-page web application built with HTML, CSS, and modern JavaScript.
 
+## 🚀 Live Demo
+- **GitHub Pages**: [https://sanskaar-tiwari.github.io/MSE2/](https://sanskaar-tiwari.github.io/MSE2/)
+- **Vercel Deployment**: [https://brisk-valley-obvfn8e.tmp.now](https://brisk-valley-obvfn8e.tmp.now)
+
 ## Features
 - **Product Catalog & Filtering**: Filter apparel by size, color, and max price slider, with multiple sorting options.
 - **Product Details**: Size selection and detailed descriptions.
@@ -10,6 +14,7 @@ An interactive e-commerce single-page web application built with HTML, CSS, and 
 - **Responsive Design**: Clean layout that adapts to both desktop and mobile viewports.
 
 ## Project Structure
-- `MSE2.html` - Base markup and navigation structure
+- `index.html` / `MSE2.html` - Base markup and navigation structure
 - `MSE2.css` - Stylesheet with responsive grid and sticky navigation
 - `MSE2.js` - Client-side state management, routing, cart logic, and DOM rendering
+- `vercel.json` - Deployment routing configuration
