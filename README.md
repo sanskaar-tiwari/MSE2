@@ -3,8 +3,8 @@
 An interactive e-commerce single-page web application built with HTML, CSS, and modern JavaScript.
 
 ## 🚀 Live Demo
+- **Vercel Deployment**: [https://mse2ecomsite.vercel.app/](https://mse2ecomsite.vercel.app/)
 - **GitHub Pages**: [https://sanskaar-tiwari.github.io/MSE2/](https://sanskaar-tiwari.github.io/MSE2/)
-- **Vercel Deployment**: [https://brisk-valley-obvfn8e.tmp.now](https://brisk-valley-obvfn8e.tmp.now)
 
 ## Features
 - **Product Catalog & Filtering**: Filter apparel by size, color, and max price slider, with multiple sorting options.
