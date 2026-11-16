@@ -1,1 +1,6 @@
 .DS_Store
+.vercel
+node_modules/
+package.json
+package-lock.json
+generate_all_screenshots.js
