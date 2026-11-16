@@ -4,39 +4,132 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>College Clothing Store</title>
+  <!-- Link to External CSS Stylesheet -->
   <link rel="stylesheet" href="MSE2.css">
 </head>
 <body>
 
-  <!-- Top Announcement Bar -->
+  <!-- Top Announcement Header -->
   <div class="announcement">
-    Welcome to our online clothing store
+    <p>Welcome to our online clothing store - Free shipping on orders over &#8377;2,000!</p>
   </div>
 
-  <!-- Header & Navigation Bar -->
+  <!-- Header Tag with Store Logo and Navigation -->
   <header>
-    <a class="logo" href="#" onclick="goToPage('home'); return false;">College Clothing Store</a>
-    
+    <div class="logo">
+      <a href="#" onclick="goToPage('home'); return false;">College Clothing Store</a>
+    </div>
+
+    <!-- Navigation Tag with Unordered List (ul, li, a) -->
     <nav>
-      <a href="#" onclick="goToPage('home'); return false;">Home</a>
-      <a href="#" onclick="goToPage('shop'); return false;">Shop</a>
-      <a href="#" onclick="openProduct(1); return false;">Product</a>
-      <a href="#" onclick="goToPage('wishlist'); return false;">Wishlist <span class="count" id="wish-count"></span></a>
-      <a href="#" onclick="goToPage('cart'); return false;">Cart <span class="count" id="cart-count">0</span></a>
-      <a href="#" onclick="goToPage('checkout'); return false;">Checkout</a>
-      <a href="#" onclick="goToPage('auth'); return false;">Account</a>
+      <ul>
+        <li><a href="#" onclick="goToPage('home'); return false;">Home</a></li>
+        <li><a href="#" onclick="goToPage('shop'); return false;">Shop</a></li>
+        <li><a href="#" onclick="openProduct(1); return false;">Product</a></li>
+        <li><a href="#" onclick="goToPage('wishlist'); return false;">Wishlist <span class="count" id="wish-count"></span></a></li>
+        <li><a href="#" onclick="goToPage('cart'); return false;">Cart <span class="count" id="cart-count">0</span></a></li>
+        <li><a href="#" onclick="goToPage('checkout'); return false;">Checkout</a></li>
+        <li><a href="#" onclick="goToPage('auth'); return false;">Account</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- Main Container where JavaScript loads the pages -->
-  <main id="app"></main>
+  <!-- Main Tag: Holds the Primary Content Sections -->
+  <main id="app">
+    <section class="wrap">
+      
+      <!-- Hero Section with Headings, Paragraph and Button -->
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">Welcome to our store</span>
+          <h1>Shop clothes online</h1>
+          <p>Browse our clothing collection and add your favourite items to the bag.</p>
+          <button class="button" type="button" onclick="goToPage('shop')">Shop now</button>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1000&q=85" alt="Store hero banner">
+        </div>
+      </section>
 
-  <!-- Page Footer -->
+      <!-- Products Section with Section Heading and Articles -->
+      <section class="home-products">
+        <div class="section-heading">
+          <h2>Customer favourites</h2>
+          <a href="#" onclick="goToPage('shop'); return false;">View all &rarr;</a>
+        </div>
+
+        <!-- Product Grid using Article Tags -->
+        <div class="product-grid">
+
+          <!-- Product Article 1 -->
+          <article class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=85" alt="Everyday Linen Shirt" onclick="openProduct(1)">
+              <button class="heart" type="button" onclick="toggleWishlist(1)">&hearts;</button>
+            </div>
+            <h3 class="product-name" onclick="openProduct(1)">Everyday Linen Shirt</h3>
+            <p class="product-price">&#8377;1,890</p>
+            <div class="product-actions">
+              <span class="product-price">Ivory</span>
+              <button class="button light small" type="button" onclick="addToCart(1)">Add to bag</button>
+            </div>
+          </article>
+
+          <!-- Product Article 2 -->
+          <article class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=85" alt="Relaxed Cotton Tee" onclick="openProduct(2)">
+              <button class="heart" type="button" onclick="toggleWishlist(2)">&hearts;</button>
+            </div>
+            <h3 class="product-name" onclick="openProduct(2)">Relaxed Cotton Tee</h3>
+            <p class="product-price">&#8377;890</p>
+            <div class="product-actions">
+              <span class="product-price">Olive</span>
+              <button class="button light small" type="button" onclick="addToCart(2)">Add to bag</button>
+            </div>
+          </article>
+
+          <!-- Product Article 3 -->
+          <article class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=85" alt="Weekend Denim" onclick="openProduct(3)">
+              <button class="heart" type="button" onclick="toggleWishlist(3)">&hearts;</button>
+            </div>
+            <h3 class="product-name" onclick="openProduct(3)">Weekend Denim</h3>
+            <p class="product-price">&#8377;2,290</p>
+            <div class="product-actions">
+              <span class="product-price">Blue</span>
+              <button class="button light small" type="button" onclick="addToCart(3)">Add to bag</button>
+            </div>
+          </article>
+
+          <!-- Product Article 4 -->
+          <article class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=85" alt="Soft Knit Cardigan" onclick="openProduct(4)">
+              <button class="heart" type="button" onclick="toggleWishlist(4)">&hearts;</button>
+            </div>
+            <h3 class="product-name" onclick="openProduct(4)">Soft Knit Cardigan</h3>
+            <p class="product-price">&#8377;2,590</p>
+            <div class="product-actions">
+              <span class="product-price">Sand</span>
+              <button class="button light small" type="button" onclick="addToCart(4)">Add to bag</button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </section>
+  </main>
+
+  <!-- Footer Tag with Paragraph and Small tags -->
   <footer>
-    <p>College E-commerce Project</p>
+    <p>&copy; 2026 College E-Commerce Project. All rights reserved.</p>
+    <small>Developed using HTML5 Semantic Tags, CSS3 &amp; JavaScript</small>
   </footer>
 
-  <!-- JavaScript file -->
+  <!-- Link to External JavaScript File -->
   <script src="MSE2.js"></script>
 </body>
 </html>

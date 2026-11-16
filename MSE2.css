@@ -75,6 +75,10 @@ button {
   font-size: 14px;
 }
 
+.announcement p {
+  margin: 0;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -97,8 +101,20 @@ header {
 nav {
   display: flex;
   align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
   gap: 18px;
   flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
 }
 
 nav a:hover {
@@ -516,6 +532,16 @@ footer {
   margin-top: 40px;
 }
 
+footer p {
+  margin: 0 0 6px;
+}
+
+footer small {
+  display: block;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
 .toast {
   position: fixed;
   right: 16px;
@@ -538,6 +564,9 @@ footer {
     order: 3;
     width: 100%;
     justify-content: flex-start;
+    gap: 12px;
+  }
+  nav ul {
     gap: 12px;
   }
   .hero,
